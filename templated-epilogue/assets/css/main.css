@@ -127,6 +127,25 @@
 
 		}
 
+		.topnav {
+		    background-color: #333;
+		    overflow: hidden;
+		}
+
+		.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+		}
 	a {
 		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
