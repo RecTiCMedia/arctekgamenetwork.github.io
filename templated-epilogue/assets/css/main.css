@@ -129,6 +129,7 @@
 
 		.topnav {
 		    overflow: hidden;
+				background-color: rgba(0,0,0,0);
 		}
 
 		.topnav a {
