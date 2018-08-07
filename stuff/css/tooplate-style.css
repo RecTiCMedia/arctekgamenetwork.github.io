@@ -90,7 +90,7 @@ p {
 }
 
 .navbar-nav>li>a {
-	color: rgb(0, 0, 0)!important;
+	color: #fff!important;
 	font-size: 13px;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -135,7 +135,7 @@ p {
 	background-repeat: no-repeat;
 }
 #main-nav {
-	background-color: transparent;
+	background-color: black;
 	background-image: none!important;
 }
 .header .navbar-brand {
@@ -143,7 +143,7 @@ p {
 }
 .navbar-inverse {
 	background-image: none;
-	background-color: transparent;
+	background-color: black;
 }
 .header .navbar {
     margin: 0;
