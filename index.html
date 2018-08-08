@@ -22,16 +22,39 @@ http://www.tooplate.com/view/2089-meteor
         <link rel="stylesheet" href="stuff/css/fontAwesome.css">
         <link rel="stylesheet" href="stuff/css/hero-slider.css">
         <link rel="stylesheet" href="stuff/css/tooplate-style.css">
+        <link rel="stylesheet" href="https://www.hacker-hub.com/js/spop.min.css">
+
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
         <script src="stuff/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="stuff/js/smoothAnchor.min.js"></script>
+        <script src="https://www.hacker-hub.com/js/spop.min.js"></script>
+
+        <script>
+            function notify(message, type, placement) {
+                spop({
+                    template: message, 
+                    position: placement,
+                    style: type 
+                })
+            }
+        </script>
+
+        <script>
+            setTimeout( () => {
+                notify("<a target='_blank' href='https://discord.gg/B9FWQ3c'>Join the ArcTek Discord Server!</a>", 'default', 'bottom-left')
+            }, 1000)
+            
+        </script>
+
     </head>
 
 <body>
-    <div class="header">
-        <div class="container">
-            <nav class="navbar navbar-inverse" role="navigation">
+    <div class="header wd-100 bg-black">
+        <div class="container wd-100 bg-black">
+            <nav class="navbar navbar-inverse wd-100" role="navigation">
                 <div class="navbar-header">
                     <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
                         <span class="sr-only">Toggle navigation</span>
@@ -43,11 +66,11 @@ http://www.tooplate.com/view/2089-meteor
                     </a>
                 </div>
                 <!--/.navbar-header-->
-                <div id="main-nav" class="collapse navbar-collapse">
+                <div id="main-nav" class="collapse navbar-collapse mr-10">
                     <ul class="nav navbar-nav">
                         <li><a href="#" data-id="home">Home</a></li>
                         <li><a href="#about" data-id="about">About Us</a></li>
-                        <li><a href="#" data-id="store">Store</a></li>
+                        <li><a onclick="notify('The store is not available at this time.','error', 'bottom-right')" href="javascript:void(0)" data-id="store">Store</a></li>
                    
                     </ul>
                 </div>
@@ -71,7 +94,7 @@ http://www.tooplate.com/view/2089-meteor
                     <div class="tm-slide-content-div slide-caption">
                         <span>Welcome to</span>
                         <h2>ArcTeKGame Network</h2>
-                        <p>Powered by RecTicUI by ArcTeK, providing fast, amazing experience on <a class="no-link-effect" href="https://arctek.hacker-hub.com">arctek.hacker-hub.com</a></p>
+                        <p>Powered by RecTicUI by ArcTeK, providing fast, amazing experience on <a class="no-link-effects" href="https://arctek.hacker-hub.com">arctek.hacker-hub.com</a></p>
                         <div class="primary-button">
                             <a href="#about" data-id="about">Who are we?</a>
                         </div>                           
@@ -173,9 +196,10 @@ http://www.tooplate.com/view/2089-meteor
                         <p>Copyright &copy; 2018 ArcTekGame Network
                         
                         - Design: <a href="http://www.tooplate.com/view/2089-meteor" target="_parent">Meteor</a></p>
+                        <p>This website is made in partnership with <a target="_blank" href="https://www.hacker-hub.com/">HackerHub</a>.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+               <!-- <div class="col-md-6">
                     <div class="social-icons">
                         <ul>
                             <li>
@@ -186,7 +210,7 @@ http://www.tooplate.com/view/2089-meteor
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>

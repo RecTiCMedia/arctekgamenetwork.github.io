@@ -5,3 +5,12 @@
 .no-link-effects:hover {
     color: white;
 }
+.wd-100 {
+    width: 100% !important;
+}
+.bg-black {
+    background-color: black;
+}
+.mr-10 {
+    margin-right: 10%;
+}
